@@ -1,3 +1,7 @@
+p, h3 {
+  margin: 0;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -10,17 +14,176 @@
 }
 
 .header {
+  position: relative;
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo {
+  width: 183px;
+}
+
+.logo_place_header {
+  position: absolute;
+  left: 64px;
+  top: 30px;
+  z-index: 2;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 102px;
+  width: 730px;
+  z-index: 2;
+  padding-left: 64px;
+}
+
+.header__subtitle {
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  width: 388px;
+  font-weight: normal;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__main-illustartion {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 765px;
+  z-index: 1;
+}
+
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background: #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  z-index: 0;
 }
+
+.description {
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.two-columns__brief {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 175px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  display: block;
+  width: 80%;
+  min-width: 784px;
+  padding: 0;
+	list-style: none;
+}
+
+.two-columns__paragraph {
+  display: flex;
+  list-style-type: none;
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph:last-of-type {
+  padding-bottom: 0;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+.section-title {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  margin: 0;
+}
+
+.section-subtitle {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+
+.table {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1100px;
+  list-style: none;
+}
+
+.table__cell {
+  width: 250px;
+  margin: 0px;
+}
+
+.table__heading {
+  padding-bottom: 20px;
+	vertical-align: baseline;
+}
+
+.table-text {
+  display: block;
+  list-style: none;
+  margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
