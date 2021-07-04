@@ -183,7 +183,7 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  height: 890px;
+  min-height: 890px;
   position: relative;
   background-color: #f2f2f2;
 }
